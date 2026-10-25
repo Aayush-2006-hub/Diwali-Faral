@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6b1724">
+  <title>Diwali Faral | Homemade Festive Treats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-strip">✨ घरगुती दिवाळी फराळ • Homemade Diwali Faral ✨</div>
+  <header class="hero">
+    <div class="hero-pattern" aria-hidden="true">✦　✧　✦　✧　✦</div>
+    <div class="hero-content">
+      <p class="eyebrow">A little sweetness, a lot of tradition</p>
+      <h1>दिवाळी फराळ</h1>
+      <h2>Traditional Diwali Faral</h2>
+      <p class="hero-copy">Celebrate the festival with classic homemade favourites. Choose your items, select the quantity, and send your order directly on WhatsApp.</p>
+      <a class="hero-cta" href="#menu">Explore the menu <span>↓</span></a>
+      <p class="contact-line">Order on WhatsApp: <a href="https://wa.me/919158448613" target="_blank" rel="noopener">9158448613</a></p>
+    </div>
+    <div class="diya diya-one" aria-hidden="true">🪔</div>
+    <div class="diya diya-two" aria-hidden="true">🪔</div>
+  </header>
+
+  <main>
+    <section class="intro" id="menu">
+      <p class="section-kicker">MADE FOR THE FESTIVE TABLE</p>
+      <h2>Our Faral Menu</h2>
+      <p>All prices are per kilogram. Choose <strong>½ kg</strong> or <strong>1 kg</strong> for each item.</p>
+      <div class="price-note"><span>½ kg</span> costs half the listed 1 kg price</div>
+    </section>
+
+    <section class="product-grid" id="products" aria-label="Faral products"></section>
+
+    <section class="order-section" id="order">
+      <div class="order-card">
+        <div class="order-heading">
+          <div>
+            <p class="section-kicker">YOUR FESTIVE BOX</p>
+            <h2>Your Order</h2>
+          </div>
+          <span class="basket-icon">🛍️</span>
+        </div>
+        <div id="empty-cart" class="empty-cart">Your order is empty. Add your favourite faral above.</div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="total-row"><span>Estimated total</span><strong id="total">₹0</strong></div>
+        <p class="small-note">Final availability and delivery/pickup details can be confirmed on WhatsApp.</p>
+        <form id="order-form">
+          <div class="form-grid">
+            <label>Your name <span>*</span><input id="customer-name" name="name" placeholder="Enter your name" required></label>
+            <label>Phone number <span>*</span><input id="customer-phone" name="phone" type="tel" inputmode="numeric" placeholder="Your contact number" required></label>
+            <label class="full">Delivery address / pickup details <small>(optional)</small><textarea id="customer-address" name="address" rows="2" placeholder="Area, address, or pickup preference"></textarea></label>
+            <label class="full">Any special note? <small>(optional)</small><textarea id="customer-note" name="note" rows="2" placeholder="Write a note, if any"></textarea></label>
+          </div>
+          <button class="whatsapp-button" type="submit">Send order on WhatsApp <span>↗</span></button>
+          <p class="whatsapp-hint">WhatsApp will open with your order message ready. Please press <strong>Send</strong> there to submit it.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-diya">🪔</div>
+    <h2>शुभ दीपावली!</h2>
+    <p>Wishing you a bright, sweet and joyful Diwali.</p>
+    <p class="footer-contact">Orders & enquiries: <a href="https://wa.me/919158448613" target="_blank" rel="noopener">9158448613</a></p>
+    <small>Product photos are provided as visual references. Please confirm product details when ordering.</small>
+  </footer>
+  <div class="floating-cart"><a href="#order">View order <span id="cart-count">0 items</span> · <strong id="floating-total">₹0</strong></a></div>
+  <script src="script.js"></script>
+</body>
+</html>
